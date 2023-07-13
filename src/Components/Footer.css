@@ -1,0 +1,48 @@
+.fo-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.fo-social{
+    display: flex;
+    justify-content: space-around;
+    width: 800px;
+    padding: 60px;
+    
+}
+.fo-social span{
+    color: #115453;
+}
+.fo-grid div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    font-size: 15px;
+}
+.fo-grid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 40px;
+    width: 100%;
+    padding: 50px;
+   
+
+}
+@media screen and (max-width:940px){
+    .fo-social{
+        display: flex;
+        justify-content: space-around;
+        width: 400px;
+        padding: 30px;
+        
+    }
+    .fo-grid div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: left;
+        font-size: 10px;
+    }
+}
