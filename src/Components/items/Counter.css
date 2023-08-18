@@ -1,0 +1,16 @@
+.counter-container{
+    display: flex;
+}
+.counter-button{
+    width: 25px;
+    border: none;
+    background-color: rgb(13, 211, 145);
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    border-radius: 15px;
+}
+.counter-container p{
+    padding-left: 10px;
+    padding-right: 10px;
+}

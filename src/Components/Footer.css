@@ -27,8 +27,15 @@
     grid-gap: 40px;
     width: 100%;
     padding: 50px;
+    
    
 
+}
+.fo-grid div span{
+    padding: 5px;
+}
+.fo-wrapper{
+    background-image: linear-gradient(45deg,#5ef09dc4 0%,#ce7ff3 100%);
 }
 @media screen and (max-width:940px){
     .fo-social{

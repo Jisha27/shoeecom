@@ -9,6 +9,7 @@ import products from '../db/data'
 import Card from '../Components/items/Card'
 export default function Best() {
   const [selectedCategory, setSelectedCategory] = useState(null);
+ 
 
   // ----------- Input Filter -----------
   const [query, setQuery] = useState("");
@@ -52,16 +53,20 @@ export default function Best() {
     }
 
     return filteredProducts.map(
-      ({ img, title, star, reviews, prevPrice, newPrice }) => (
+      ({id, img, title, star, reviews, prevPrice, newPrice }) => (
+      
         <Card
-          key={Math.random()}
+          key={id}
+          id={id}
           img={img}
           title={title}
           star={star}
           reviews={reviews}
           prevPrice={prevPrice}
           newPrice={newPrice}
+         
         />
+        
       )
     );
   }

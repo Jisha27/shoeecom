@@ -4,11 +4,12 @@ import {FaFacebook,FaInstagram,FaPinterest,FaTwitter} from 'react-icons/fa'
 export default function Footer () {
   return (
     <div className='fo-wrapper'>
+      <hr/>
        <div className='fo-social'>
-        <span className='co'> <FaFacebook size={50} /></span>
-        <span className='co'> <FaInstagram size={50}/></span>
-        <span className='co'><FaTwitter size={50}/></span>
-        <span className='co'><FaPinterest size={50}/></span>
+        <span className='co'> <FaFacebook size={30} /></span>
+        <span className='co'> <FaInstagram size={30}/></span>
+        <span className='co'><FaTwitter size={30}/></span>
+        <span className='co'><FaPinterest size={30}/></span>
        </div>
        <div className='fo-grid'>
         <div>

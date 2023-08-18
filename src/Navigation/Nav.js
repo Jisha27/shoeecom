@@ -3,8 +3,12 @@ import React from 'react'
 import { FiHeart } from "react-icons/fi";
 import { AiOutlineShoppingCart, AiOutlineUserAdd } from "react-icons/ai";
 import "./Nav.css";
+import { Link } from 'react-router-dom';
+import { cartContext } from '../App';
+import { useContext } from 'react';
 
 const Nav = ({ handleInputChange, query }) => {
+  const{cart,setCart}=useContext(cartContext)
   return (
     <nav>
       <div className="nav-container">
@@ -17,15 +21,16 @@ const Nav = ({ handleInputChange, query }) => {
         />
       </div>
       <div className="profile-container">
-        <a href="#">
+        
           <FiHeart className="nav-icons" />
-        </a>
-        <a href="">
+        
+        <Link to='/cart'>
           <AiOutlineShoppingCart className="nav-icons" />
-        </a>
-        <a href="">
+        </Link>
+        <div className='cart-length'>{cart.length}</div>
+        
           <AiOutlineUserAdd className="nav-icons" />
-        </a>
+        
       </div>
     </nav>
   );

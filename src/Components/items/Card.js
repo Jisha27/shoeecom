@@ -1,8 +1,41 @@
 import React from 'react'
-
+import './Card.css'
 import { BsFillBagFill } from "react-icons/bs";
 
-const Card = ({ img, title, star, reviews, prevPrice, newPrice }) => {
+import { useContext } from 'react';
+import { cartContext } from '../../App';
+
+
+const Card = ({ id,img, title, star, reviews, prevPrice, newPrice }) => {
+  const{cart,setCart}=useContext(cartContext)
+  
+const handleCart=(id,img, title, star, reviews,  newPrice)=>{
+  let isPresent = false;
+  cart.forEach(element => {
+    if(id===element.id)
+    isPresent=true;
+    
+  
+  });
+  if(isPresent){
+   alert('already added this')
+  }else{
+    setCart((previtems)=> [
+            {
+                id:id,
+                img:img,
+                title:title,
+                star:star,
+                reviews:reviews,
+                newPrice:newPrice,
+                
+            
+            },...previtems])
+  }
+
+ 
+  
+}
   return (
    
       <section className="card">
@@ -17,9 +50,10 @@ const Card = ({ img, title, star, reviews, prevPrice, newPrice }) => {
             <div className="price">
               <del>{prevPrice}</del> {newPrice}
             </div>
-            <div className="bag">
-              <BsFillBagFill className="bag-icon" />
-            </div>
+            
+            <button className='card-button' onClick={()=>handleCart(id,img, title, star, reviews,  newPrice)}>
+                      <BsFillBagFill className="bag-icon" color='white' />
+            </button>
           </section>
         </div>
       </section>

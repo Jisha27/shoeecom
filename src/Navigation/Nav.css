@@ -54,3 +54,19 @@ nav {
     height: 1.5rem;
     margin-left: 2rem;
   }
+.profile-container{
+    position: relative;
+}
+
+  .cart-length{
+    position: absolute;
+    width: 20px;
+    background-color: rgb(14, 132, 132);
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    border-radius: 15px;
+    font-size: 14px;
+    left: 104px;
+    top: -15px;
+  }

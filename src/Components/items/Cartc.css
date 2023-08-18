@@ -1,0 +1,26 @@
+.cart-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 600px;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.24);
+    padding: 20px;
+    margin: 10px;
+}
+.cart-img{
+    width: 150px;
+    height: 150px;
+}
+.title{
+    font-size: 10px;
+}
+@media screen and (max-width:940px){
+    .cart-img{
+        width: 100px;
+        height: 100px;
+    }
+    .cart-card{
+        width: 100%;
+    }
+}
