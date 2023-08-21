@@ -7,7 +7,7 @@ export default function Contacta() {
   return (
     <div className='wrapper-contact'>
          <div className='one'>
-              <img src={contactimg}/>
+              <img src={contactimg} alt='img'/>
               </div>
              <div className='two'>
                  <h1>Meet us</h1>

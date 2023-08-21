@@ -2,7 +2,7 @@ import React from 'react'
 import './Sigin.css'
 import {Link} from 'react-router-dom'
 import Navbar from '../Components/Navbar'
-import Footer from '../Components/Footer'
+
 export default function Sigin() {
   return (
     <div className='sigin-cover'>
