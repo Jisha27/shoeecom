@@ -22,8 +22,10 @@ export default function Sigin() {
           </tr>
           
         <tr>
-             <td> <div className='btn-about'><button className='btn' >Submit</button>
-             <Link to='/Register'><button className='btn' >Register</button></Link></div></td>
+             <td> <div className='btn-about'>
+             <button className='btn' >Submit</button>
+             <Link to='/Register'><button className='btn' >Register</button></Link>
+             </div></td>
           </tr>
           <tr>
             <td><p className='notmem'>*Not Member? Register</p></td>

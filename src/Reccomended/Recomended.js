@@ -5,7 +5,7 @@ import "./Recomended.css";
 const Recomended = ({ handleClick }) => {
   return (
     <div>
-      <div>
+      <div className='rec-wrapper'>
         <h2 className="recommended-title">Recommended</h2>
         <div className="recommended-flex">
           <Button onClickHandler={handleClick} value="" title="All Products" />
