@@ -53,21 +53,22 @@ td{
     .sigin{
         z-index: 5;
         background-color: linear-gradient(45deg,#5ef09dc4 0%,#ce7ff3 100%);
-        padding: 40px;
+        padding: 60px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 80%;
+        width: 90%;
         height: 400px;
         position: absolute;
-        left: 10%;
+        left: 5%;
         top: 100px;
     }
     .btn-about{
         
-        left: 50px;
+        left: 20px;
        
         
     }
+    
 }

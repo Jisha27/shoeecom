@@ -64,9 +64,63 @@
     border-radius: 8px;
     cursor: pointer;
 }
-@media screen and (max-width:940px){
+@media screen and (max-width:800px){
     .content{
        background-color: rgba(0, 0, 0, 0.492);
        width: 500px;
     }
+    .hero{
+        background-color: rgba(0,0,0,0);
+    color: white;
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    }
+    .content{
+        width: 100%;
+    }
+    .hero{
+        background-color: rgba(0,0,0,0);
+        color: white;
+        width: 100%;
+        height: 80vh;
+        position: relative;
+    }
+    .search div input{
+        border: none;
+       
+    }
+    .search{
+        width: 90%;
+    }
+    .hero:before{
+        content: '';
+        background: url('../Assets/super-straho-5BMPrXBFTI8-unsplash.jpg') no-repeat center center/cover;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+   
 }
+/* @media screen and (max-width:320px){
+    .search-text{
+        width: 100%;
+    }
+    .content{
+       background-color: rgba(0, 0, 0, 0.492);
+       width: 100%;
+    }
+    .search {
+        width: 290px;
+        margin-left: 20px;
+    }
+    .search div input{
+        width: 200px;
+    }
+    .content h1{
+        text-align: left;
+    }
+} */

@@ -47,7 +47,7 @@
   .bag-icon {
     color: #535353;
   }
-@media screen and (max-width:940px){
+/* @media screen and (max-width:780px){
   .card-container {
     display: flex;
     flex-wrap: wrap;
@@ -105,4 +105,50 @@
 
 
 
+} */
+@media screen and (max-width:800px){
+  .card-img{
+    width: 120px;
+  }
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 2%;
+    margin-top: 1rem;
+    z-index: -2;
+    
+  }
+  .card-title {
+    margin-bottom: 2px;
+    font-size: 10px;
+  }
+  
+  .card-reviews {
+    margin-bottom: 5px;
+    display: flex;
+    font-size: 10px;
+  }
+  
+  .rating-star {
+    color: #d5ab55;
+  }
+  
+  .total-reviews {
+    font-size: 0.9rem;
+    margin-left: 10px;
+    font-size: 10px;
+  }
+  
+  .card-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 10px;
+  }
+  .card{
+    width: 180px;
+    margin: 5px;
+    height: 300px;
+
+  }
 }

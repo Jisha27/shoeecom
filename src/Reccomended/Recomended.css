@@ -41,13 +41,31 @@
     margin-top: 20px;
     font-size: 20px;
   }
-@media screen and (max-width:940px){
+/* @media screen and (max-width:780px){
   .recommended-title{
     margin-left: 40%;
     margin-top: 50px;
   }
   .recommended-flex{
     margin-left: 14%;
+  }
+  .recommended-flex Button{
+   
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+    font-size: 10px;
+    font-weight: 700;
+    margin-top:25px ;
+}
+} */
+@media screen and (max-width:800px){
+  .recommended-title{
+    margin-left: 30%;
+    margin-top: 50px;
+  }
+  .recommended-flex{
+    margin-left: 5%;
   }
   .recommended-flex Button{
    

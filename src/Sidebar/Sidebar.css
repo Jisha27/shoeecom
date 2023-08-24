@@ -7,7 +7,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    top: 750px;
+    top: 900px;
   }
   
   .logo-container {
@@ -28,16 +28,16 @@
     margin-bottom: 10px;
   }
   
-  @media screen and (max-width:940px){
+  @media screen and (max-width:800px){
    .sidebar{
     /* display: flex; */
     /* flex-direction: row; */
     width: 50%;
     height: 900px;
-    
+    position: absolute;
     
    
-    top: 700px;
+    top: 760px;
    }
    
    .hidden{
@@ -79,4 +79,5 @@
    .hidden-t{
     padding-left: 60px;
    }
+   
 }

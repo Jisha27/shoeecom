@@ -70,3 +70,18 @@ nav {
     left: 104px;
     top: -15px;
   }
+  @media screen and (max-width:600px)   {
+    .cart-length{
+      
+      left: 100px;
+      top: -10px;
+    }
+    .profile-container{
+      display: flex;
+      flex-direction: row;
+
+    }
+    input{
+      width: 150px;
+    }
+}

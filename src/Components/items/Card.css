@@ -1,4 +1,4 @@
-.card1{
+.card{
     display: flex;
     flex-wrap: wrap;
     
@@ -22,7 +22,4 @@
     background-color: rgb(172, 132, 221);
     border-radius: 30px;
     cursor: pointer;
-}
-@media screen and (max-width:940px){
-    
 }
